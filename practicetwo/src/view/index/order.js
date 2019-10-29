@@ -98,7 +98,7 @@ class Order extends Component{
             item.foods.map(item1=>item1.count=0)//右侧的数量
         })
 
-
+        // 取每个盒子到顶部的距离
         this.setState({list:res.data.goods})
         let {scrollH}=this.state
         let child=Array.from(this.refs.right.children)
